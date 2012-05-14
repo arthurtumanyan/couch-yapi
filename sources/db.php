@@ -96,11 +96,6 @@ class DB extends CouchAPI
         }
     }
     
-    public function ViewCompaction()
-    {
-        
-    }
-    
     public function ViewCleanup($database)
     {
         $headers[] = 'Content-Type: application/json;';
