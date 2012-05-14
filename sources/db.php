@@ -161,23 +161,13 @@ class DB extends CouchAPI
         }
     }
     
-    public function PurgeDocument($database,$id,$revs = array())
+    public function PurgeDocument($database,$doc_id,$revs = array())
     {
-       $revisions = '';
        $content = '';
        $headers[] = 'Content-Type: application/json;';
-       if(!empty($id) && is_array($revs))
+       if(!empty($database) && !empty($doc_id) && is_array($revs))
         {
-
-            for($i = 0; $i < count($revs); $i++)
-            {
-                $revisions .= '"'.$revs[$i].'"';
-                if($i < count($revs) - 1)
-                {
-                    $revisions .= ',';
-                }
-            }
-            $content = "{\n\"$id\" : [\n".$revisions."\n]\n}";
+            $content = json_encode(array($doc_id => $revs));
         }else{
             return false;
         }

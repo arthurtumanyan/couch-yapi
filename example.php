@@ -41,8 +41,8 @@ $db->Init();
 //print_r($db->CompactDB('my'));
 //print_r($db->TempView('my'));
 //print_r($db->GetAllDocsView());
-$arr = array('1-967a00dff5e02add41819138abb3284d','2-7051cbe5c8faecd085a3fa619e6e6337','3-825cb35de44c433bfb2df415563a19de');
-//print_r($db->PurgeDocument('my2','04bfb3ada9c4b67bf58620a01a35a6c2',$arr));
+$arr = array('1-dab0468f9f2a60a13dc37858868cdfff');
+print_r($db->PurgeDocument('my','hello_matax',$arr));
 //$document->SetCouchPort(5984);
 //$document->SetUseSecure(true);
 $document->SetUseAuth(true);
@@ -51,11 +51,12 @@ $document->SetCouchPassword('password');
 $document->Init();
 
 
-$data = array('hello' => array('God','bless','Armenia'));
-//print_r($document->CreateDoc('my', 'hello_matax', $data));
+//$data = array('hello' => array('God','bless','Armenia',array('bobo' => 'gigi')));
+$data = 'madonna mia';
+//print_r($document->CreateDoc('my', 'hello_matax3', $data));
 //print_r($document->DeleteDoc('my','hello_world', '1-b664f71c5a228fd6107d4c48347a0003'));
 //print_r($document->CopyDoc('my', 'hello_matax', 'matax'));
-//print_r($document->PutAttachment('my','myfirstfile','/home/freeman/replica.sh','1-967a00dff5e02add41819138abb3284d'));
-
-print_r($document->DeleteAttachment('my', 'myfirstfile', 'replica.sh', '2-4b4e07761732eb6b90e8e165dd3b5d0d'));
+//print_r($document->PutAttachment('my','hello_matax','/home/freeman/replica.sh','1-967a00dff5e02add41819138abb3284d'));
+//file_put_contents('nkar.gif', $document->GetAttachment('my', 'kapan.tv', 'sositv.gif'));
+//print_r($document->DeleteAttachment('my', 'myfirstfile', 'replica.sh', '2-4b4e07761732eb6b90e8e165dd3b5d0d'));
 ?>

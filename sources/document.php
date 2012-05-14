@@ -15,44 +15,17 @@ class Document extends CouchAPI
     
     public function CreateDoc($database,$doc_id,$data,$update = false,$rev = '')
     {
-
-        if(!empty($doc_id) && is_array($data) && !empty($database))
+        if(!empty($doc_id) && !empty($database))
         {
-            
-        $postField = '{"_id":'.parent::addQuotes($doc_id).',';
-        
+        $d['_id'] = $doc_id;
         if($update && !empty($rev))
         {
-            $postField .= '"_rev":'.parent::addQuotes($rev).',';
+            $d['_rev'] = $rev;
         }
+        $d['data'] = $data;
         
-        $count = 0;
-            foreach($data as $field => $value)
-            {
-                if(is_array($value))
-                {
-                    $c = 0;
-                    $temp = '[';
-                    foreach ($value as $array_value)
-                    {
-                        $temp .= sprintf("%s",parent::addQuotes($array_value));
-                        if($c < count($value) - 1)
-                        {
-                           $temp .= ',';
-                        }
-                        $c++;
-                    }
-                    $temp .= ']';
-                }
-                $postField .= sprintf("%s:%s",parent::addQuotes($field),(is_array($value))?$temp:parent::addQuotes($value));
-                if($count < count($data) - 1)
-                {
-                    $postField .= ',';
-                }
-                $count++;
-            }
-            $postField .= '}';
-
+        ksort($d);
+        $postField = json_encode($d);
         }else {
             return false;
         }
