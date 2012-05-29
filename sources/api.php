@@ -1,6 +1,5 @@
 <?php
 error_reporting(E_ALL);
-
 include_once 'api.inc';
 require_once 'error.php';
 
@@ -17,7 +16,7 @@ class CouchAPI
     private $conHandle;
     //
     protected $errorstr;
-    protected $errno;
+    public $errno;
     private $error;
     private $timeout = 30;
     //
@@ -245,11 +244,11 @@ class CouchAPI
     
     public function SetCouchPort($port)
     {
-        if(!isset($port)||  empty($host))
+        if(!isset($port))
         {
             $port = COUCHDB_POST;
         }
-        if(filter_var($port,FILTER_VALIDATE_INT) && ($port > 0 && $port < 65535))
+        if(is_integer($port) && ($port > 0 && $port < 65535))
         {
             $this->couchDB_port = $port;
         }
@@ -258,8 +257,8 @@ class CouchAPI
                 $this->error->SetCryMessage(ERR_INVALID_PORT, 'error');
                 $this->error->CryMessage();
             }
-        
-    }
+            
+         }
     
     public function SetCouchUser($username)
     {
