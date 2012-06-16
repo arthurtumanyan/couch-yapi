@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class DB</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class DB</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+		<p class="notes">
+			Located in <a class="field" href="_sources---db.php.html">/sources/db.php</a> (line <span class="field">6</span>)
+		</p>
+		
+				
+		<pre><a href="../default/CouchAPI.html">CouchAPI</a>
+   |
+   --DB</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#CompactDB" title="details" class="method-name">CompactDB</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#CreateDB" title="details" class="method-name">CreateDB</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#DeleteDB" title="details" class="method-name">DeleteDB</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#FullCommit" title="details" class="method-name">FullCommit</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#GetAllDocsView" title="details" class="method-name">GetAllDocsView</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#GetDBChanges" title="details" class="method-name">GetDBChanges</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#GetDBInfo" title="details" class="method-name">GetDBInfo</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Init" title="details" class="method-name">Init</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#isDBExists" title="details" class="method-name">isDBExists</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#PurgeDocument" title="details" class="method-name">PurgeDocument</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$doc_id</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$revs</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#TempView" title="details" class="method-name">TempView</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$map</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ViewCleanup" title="details" class="method-name">ViewCleanup</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../default/CouchAPI.html">CouchAPI</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$errno">CouchAPI::$errno</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$errorstr">CouchAPI::$errorstr</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$proxyAuthName">CouchAPI::$proxyAuthName</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$proxyAuthPassword">CouchAPI::$proxyAuthPassword</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$proxyHost">CouchAPI::$proxyHost</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$proxyPort">CouchAPI::$proxyPort</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../default/CouchAPI.html#var$useProxy">CouchAPI::$useProxy</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodCompactDB" id="CompactDB"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">CompactDB</span> (line <span class="line-number">91</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			CompactDB
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCreateDB" id="CreateDB"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateDB</span> (line <span class="line-number">43</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			CreateDB
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodDeleteDB" id="DeleteDB"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">DeleteDB</span> (line <span class="line-number">59</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			DeleteDB
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodFullCommit" id="FullCommit"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">FullCommit</span> (line <span class="line-number">150</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			FullCommit
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodGetAllDocsView" id="GetAllDocsView"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetAllDocsView</span> (line <span class="line-number">196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			GetAllDocsView
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodGetDBChanges" id="GetDBChanges"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetDBChanges</span> (line <span class="line-number">75</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			GetDBChanges
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetDBInfo" id="GetDBInfo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetDBInfo</span> (line <span class="line-number">18</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			GetDBInfo
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodInit" id="Init"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Init</span> (line <span class="line-number">12</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Init
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../default/CouchAPI.html#methodInit">CouchAPI::Init()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodisDBExists" id="isDBExists"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">isDBExists</span> (line <span class="line-number">34</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isDBExists
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodPurgeDocument" id="PurgeDocument"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">PurgeDocument</span> (line <span class="line-number">169</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			PurgeDocument
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$doc_id</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$revs</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$doc_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$revs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodTempView" id="TempView"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">TempView</span> (line <span class="line-number">127</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			TempView
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$map</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$map</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodViewCleanup" id="ViewCleanup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ViewCleanup</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ViewCleanup
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$database</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../default/CouchAPI.html">CouchAPI</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../default/CouchAPI.html#method__construct">CouchAPI::__construct()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodaddQuotes">CouchAPI::addQuotes()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetCouchDBHost">CouchAPI::GetCouchDBHost()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetCouchDBPort">CouchAPI::GetCouchDBPort()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetCouchPasswd">CouchAPI::GetCouchPasswd()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetCouchUser">CouchAPI::GetCouchUser()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetHandle">CouchAPI::GetHandle()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetProto">CouchAPI::GetProto()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetProxyAuthName">CouchAPI::GetProxyAuthName()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetProxyAuthPasswd">CouchAPI::GetProxyAuthPasswd()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetProxyHost">CouchAPI::GetProxyHost()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetProxyPort">CouchAPI::GetProxyPort()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetProxyURL">CouchAPI::GetProxyURL()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetRoot">CouchAPI::GetRoot()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodGetTimeout">CouchAPI::GetTimeout()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodInit">CouchAPI::Init()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSendRequest">CouchAPI::SendRequest()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetCouchHost">CouchAPI::SetCouchHost()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetCouchPassword">CouchAPI::SetCouchPassword()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetCouchPort">CouchAPI::SetCouchPort()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetCouchUser">CouchAPI::SetCouchUser()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetProxyAuthName">CouchAPI::SetProxyAuthName()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetProxyAuthPasswd">CouchAPI::SetProxyAuthPasswd()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetProxyHost">CouchAPI::SetProxyHost()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetProxyPort">CouchAPI::SetProxyPort()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetTimeout">CouchAPI::SetTimeout()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetUseAuth">CouchAPI::SetUseAuth()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetUseProxy">CouchAPI::SetUseProxy()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodSetUseSecure">CouchAPI::SetUseSecure()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodUseAuth">CouchAPI::UseAuth()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodUseProxy">CouchAPI::UseProxy()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#methodUseSecure">CouchAPI::UseSecure()</a></span><br>
+													<span class="method-name"><a href="../default/CouchAPI.html#method__destruct">CouchAPI::__destruct()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 16 Jun 2012 15:01:54 +0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

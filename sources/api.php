@@ -129,9 +129,6 @@ class CouchAPI
         return $this->proxyPort;
     }
 
-
-
-
     public function SetProxyAuthName($authName)
     {
         if(isset($authName))
