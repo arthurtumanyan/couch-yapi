@@ -1,7 +1,7 @@
 <?php
 /*  
     Yet another PHP interface to CouchDB
-    Copyright (C) 2012  Arthur Tumanyan
+    Copyright (C) 2012  Arthur Tumanyan <arthurtumanyan@yahoo.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
